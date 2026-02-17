@@ -27,4 +27,10 @@ fn main() {
     y += 1.0;
     counter -= 1;
    }
+
+   fn is_even(n: i32) -> bool
+   {
+    
+   }
+
 }
