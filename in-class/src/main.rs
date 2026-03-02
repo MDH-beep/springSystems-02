@@ -9,7 +9,6 @@ fn celsius_to_fahrenheit(c:f64)-> f64 {
     c * 1.8 + 32.0
     
 }
-
 fn is_even (n: i32) -> bool
 { if n % 2 == 0  
 {return true;}
@@ -26,9 +25,7 @@ fn check_guess(guess: i32, secret: i32) -> i32
         else {
             return -1;
         }
-        }  
-
-
+}  
 fn main() {
     // Assignment 1
    const W: u32= 32;
@@ -40,14 +37,8 @@ fn main() {
     counter -= 1;
    }
 
-   let mut y :f64 = 10.0;
-   let mut counter =6;
-   while counter != 0 {
-    println!("C to F = {}", celsius_to_fahrenheit(y));
-    y += 1.0;
-    counter -= 1;
-   }
-// Assignment 2
+  
+    // Assignment 2
   let numbers = [ 2, 22, 54, 66, 20, 15, 40, 12, 6, 1];
   for num in numbers.iter()
   // for loop
@@ -72,7 +63,7 @@ fn main() {
         }
     }
 }
- // while loop
+    // while loop
     let mut counter = 0;
     let mut sum = 0;
     while counter < numbers.len() 
@@ -81,26 +72,21 @@ fn main() {
         counter += 1;
     }
     println!("Total sum : {}", sum);
-
     // largest number loop
      let mut index = 0;
     let mut largest = numbers[0];
-
     loop {
         if index >= numbers.len() {
             break;
         }
-
         if numbers[index] > largest {
             largest = numbers[index];
         }
-
         index += 1;
     }
-
     println!("Largest number: {}", largest);
 
-    // Assignment 3
+  // Assignment 3
      let secret = 22;
       let mut counter =0;
       let mut guess;
